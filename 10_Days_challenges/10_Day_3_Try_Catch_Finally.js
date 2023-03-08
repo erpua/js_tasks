@@ -14,8 +14,8 @@ process.stdin.on('end', _ => {
     inputString = inputString.trim().split('\n').map(string => {
         return string.trim();
     });
-    
-    main();    
+
+    main();
 });
 
 function readLine() {
@@ -28,10 +28,10 @@ function readLine() {
  */
 function reverseString(s) {
     try {
-      s = s.split("").reverse().join("");
+        s = s.split("").reverse().join("");
     }
     catch (error) {
-      console.log('s.split is not a function');
+        console.log('s.split is not a function');
     }
     finally {
         console.log(s);
@@ -41,6 +41,6 @@ function reverseString(s) {
 
 function main() {
     const s = eval(readLine());
-    
+
     reverseString(s);
 }
